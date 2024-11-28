@@ -101,7 +101,7 @@
     <main style="padding: 20px; background-color: #dfecc4; border-radius: 15px; margin: 20px auto; max-width: 1000px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);">
     
         <section class="team-photo" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; padding: 20px; background-color: #fff; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
-            <img src="logo.png" alt="Logo da equipe" style="width: 150px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
+            <img src="logo.png" alt="Logo da equipe" style="width: 200px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
             <div class="team-description" style="max-width: 600px; padding-left: 20px;">
                 <p style="font-size: 1.2em; line-height: 1.6; color: #333; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Somos um jornal direcionado a temática do agronegócio e economia. Temos o objetivo de divulgar informações a todos produtores sobre o mercado internacional da soja.</p>
             </div>
@@ -118,23 +118,64 @@ Arthur Theodoro, desenvolvedor front end e back end de todo site.</p>
             </div>
         </section>
         <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão de Voltar ao Topo</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Botão para o topo</title>
+    <style>
+        /* Estilos para o botão */
+        #btnTopo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: none; /* Inicialmente oculto */
+        }
+
+        #btnTopo:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
 
-    <div class="content">
+    <!-- Conteúdo da página -->
+    <div style="height: 1500px;">
+        <h1>Desça para ver o botão</h1>
+        <p>Desça a página e veja o botão para voltar ao topo.</p>
     </div>
 
-    <button id="scrollToTopBtn" class="scroll-btn">↑</button>
+    <!-- Botão para voltar ao topo -->
+    <button id="btnTopo" onclick="topoPagina()">Voltar ao topo</button>
 
-    <script src="script.js"></script>
+    <script>
+        // Mostrar o botão quando o usuário rolar a página
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("btnTopo").style.display = "block";
+            } else {
+                document.getElementById("btnTopo").style.display = "none";
+            }
+        };
+
+        // Função para voltar ao topo
+        function topoPagina() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
+
 </body>
 </html>
+
 
     </main>
     
