@@ -24,15 +24,25 @@
             margin: 0;
             vertical-align: middle;
         }
+        
+        .titulo-imagem {
+            text-align: center; /* Centraliza o título */
+            font-size: 14pt; /* Define o tamanho da fonte */
+            font-weight: bold; /* Deixa o título em negrito */
+            margin-bottom: 10px; /* Espaço abaixo do título */
+        }
+
         .image-container {
             display: inline-block;
             vertical-align: middle;
             margin-left: 20px; /* Espaço entre o título e a imagem */
         }
-        .image-container img {
-            width: 100px; /* Tamanho da imagem */
-            height: auto;
+        .container-imagem {
+            display: flex; /* Usando flexbox para centralizar */
+            justify-content: center; /* Centraliza a imagem na horizontal */
+            align-items: center; /* Alinha a imagem na vertical, se necessário */
         }
+        
         nav {
             background-color: #fffbea;
             padding: 10px;
@@ -112,14 +122,21 @@
 
     <main>
         <div class="sections">
+            <a href="#resumo">Resumo</a>
             <a href="#introducao">Introdução</a>
             <a href="#desenvolvimento">Desenvolvimento Teórico</a>
             <a href="#metodologia">Metodologia</a>
             <a href="#resultados">Resultados</a>
+            <a href="#considerações finais">Considerações finais</a>
             <a href="#referencias">Referências</a>
         </div>
 
-        <article id="introducao">
+        <article id="resumo">
+            <h2>RESUMO</h2>
+            <p>&nbsp;O artigo aborda a importância da soja no agronegócio brasileiro e global, destacando o Brasil como um dos maiores produtores mundiais. Apresenta um panorama das oscilações no preço da commodity, especialmente na última década, e explora os principais fatores que influenciam essas variações, como a oferta e demanda, a taxa de câmbio e o tamanho da safra. A produção brasileira de soja é vital para a economia impactada por fatores climáticos, logísticos e pelo mercado internacional, sobretudo pela demanda de países como China e membros da União Europeia. O artigo destaca como variações cambiais e políticas econômicas internacionais afetam o preço da soja e cita estudos sobre a elasticidade da transmissão de preços entre o Brasil e o Porto de Roterdã. A análise utiliza dados da Conab e do Estado de Mato Grosso, o maior produtor, como referência para entender as flutuações do preço da soja de 2014 a 2024. Por fim, sugere a criação de um site com informações sobre o mercado da soja, facilitando o acesso a dados relevantes para investidores e produtores, oferecendo insights sobre como a precificação é afetada e como tomar decisões informadas.</p>
+        </article>
+
+            <article id="introducao">
             <h2>INTRODUÇÃO</h2>
             <p>&nbsp;O Brasil informalmente recebe o nome de “celeiro do mundo” – por sua imensa capacidade de exploração de recursos naturais – e no cerne do agronegócio tem a soja, sendo esta a principal commodity brasileira. Usada desde a produção de cosméticos até seus usos mais usuais como farelo destinado a ração animal.</p>
             <p>&nbsp;O comércio da mercadoria em questão é de suma importância não só para economia brasileira como também global. Segundo a Embrapa, na safra de 2022/23 o Brasil produziu cerca de 2/5 da produção global do grão e aproximadamente 14% do montante total de exportações do Brasil foram do grão. A justificativa deste artigo se dá pela necessidade de expor dados relevantes a novos investidores no segmento, assim como entender o contexto desta mercadoria tão importante para o território brasileiro.</p>
@@ -178,7 +195,90 @@
 
         <article id="resultados">
             <h2>4. RESULTADOS</h2>
-            <p>&nbsp;[Texto dos resultados aqui]</p>
+            <h3>4.1 Panorama geral da década</h3>
+            <p>&nbsp;Os dados sobre o preço da soja a nível nacional advém exclusivamente da praça do estado de Mato Grosso - unidade federativa com maior produção. Ao escolher um local somente facilita a pesquisa delimitando seu escopo, e retira variáveis, um exemplo sendo os problemas de logísticas, cidades portuárias enfrentam consideravelmente menos. MT além de compartilhar das muitas características com os outros principais produtores têm extrema relevância econômica, tornando - se um ótimo exemplar para fonte de informações.</p>
+            <div class="titulo-imagem">
+                Figura 4.1: Preço médio mensal da soja na praça de MT de 2014 a 2024
+            </div>
+            <div class="container-imagem">
+                <img src="4.1.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte: FAOSTAT (2023).</p>
+            <p>&nbsp;Ao analisar o gráfico contendo os preços médios da última década é notório 2 períodos - estes serão o foco do artigo, daqui para frente - um com uma alta muito forte, com início perto de janeiro de 2020 e término na entrada do ano de 2021. O segundo é uma queda acentuada entre junho de 2022 e o mesmo mês de 2023.</p>
+
+            <h3>4.2 Período de alta</h3>
+            <p>&nbsp;Primeiramente, será analisado durante a alta, a expressividade desse período é imensa, dada o número de variáveis necessárias para uma commodity tão estabelecida como a soja ter um aumento de preço de 100% em pouco menos de um ano.</p>
+            <div class="titulo-imagem">
+                Figura 4.2: preço médio mensal da soja durante o aumento dos preços
+            </div>
+            <div class="container-imagem">
+                <img src="4.2.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte: CONAB (2023).</p>
+            <p>&nbsp;Antes de tudo, é necessário correlacionar os eventos a pandemia da Covid - 19. Uma das políticas adotadas por muitos países para mitigar o contato com o vírus foi dar destaque ao mercado interno, diminuindo ao máximo as exportações para que a produção ficasse dentro do país.</p>
+            <p>&nbsp;Os Estados Unidos - um dos principais concorrentes do Brasil - no período destacado sofreram queda expressiva em suas exportações da commodity o que possibilitou ao Brasil preencher esta demanda.</p>
+            <div class="titulo-imagem">
+                Figura 4.3: Exportações dos maiores produtores de soja a nível mundial entre os anos de 2018 e 2022
+            </div>
+            <div class="container-imagem">
+                <img src="4.3.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte: FAOSTAT (2023).</p>
+            <p>&nbsp;Além disso, segundo Costa (2022. p 21) em sua dissertação sobre os processos de formação do preço da soja:</p>
+            <blockquote class="citacao-abnt">
+                Os preços da soja nos portos brasileiros, que são referência para o mercado físico nas regiões produtoras, são formados principalmente pelo comportamento dos futuros de soja em Chicago, da taxa de câmbio R$/US$ e do prêmio de exportação nos portos brasileiros. Também, as despesas com fretes, taxas portuárias, corretagem entre outros custos logísticos também são importantes componentes e ajudam a explicar os diferentes níveis de preços no mercado físico nas distintas regiões produtoras do Brasil e do Rio Grande do Sul. </blockquote>
+            <p>&nbsp;Todos os fatores supracitados contribuem na alta, as dificuldades logísticas para contornar a Covid - 19, o preço do dólar aumentou drasticamente.</p>
+            <div class="titulo-imagem">
+                Figura 4.4: Preço do dólar pré- pandemia
+            </div>
+            <div class="container-imagem">
+                <img src="4.4.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte:INVESTING (2024).</p>
+            <div class="titulo-imagem"></div>
+            Figura 4.5 Ápice do dólar durante a pandemia            </div>
+            <div class="container-imagem">
+                <img src="4.5.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte:INVESTING (2024).</p>
+            <p>&nbsp;Em complementaridade, foram estes fatores que fizeram o preço da saca dobrar de valor e é válido destacar que todos os principais fatores indicavam para uma alta na soja, o que faz sentido pois é necessário um contexto muito próspero para uma commodity tão globalizada como a soja duplicar de valor.</p>
+
+            <h3>4.3 Período de queda</h3>
+            <p>&nbsp;É errôneo adotar uma postura maniqueísta, contudo esse período é marcado principalmente pelos traços opostos da subida, aqui o mundo já caminhava para o fim da pandemia - em maio de 2023 a OMS viria a declarar o coronavírus não mais como emergência de saúde pública de importância internacional. Devido às altas taxas de juros no mundo todo - para conter a inflação gerada pela expansão monetária - muitos países enfrentaram uma recessão econômica, levando a uma baixa demanda e consequentemente menor preço.</p>
+            <div class="titulo-imagem">
+                Figura 4.6: Preço médio da soja durante sua queda, entre julho 2022 e julho 2023
+            </div>
+            <div class="container-imagem">
+                <img src="4.6.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte:CONAB (2023).</p>
+            <div class="titulo-imagem">
+                Figura 4.7: Importações dos maiores compradores brasileiros de soja
+            </div>
+            <div class="container-imagem">
+                <img src="4.7.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte:FAOSTAT (2023).</p>
+            <p>&nbsp;Ademais, houve ainda uma queda do dólar, voltando a praticamente patamares de antes da covid, prejudicando exportações.</p>
+            <div class="titulo-imagem">
+                Figura 4.8 : Dólar no meio do ano de 2023
+            </div>
+            <div class="container-imagem">
+                <img src="4.8.png" alt="Descrição da imagem" width="600">
+            </div>
+            <p class="caption">Fonte:INVESTING (2024).</p>
+            <p>&nbsp;A imagem 4.8 representa a mínima do dólar no período, e de modo geral é possível observar oposto ao presenciado no início da pandemia, com todas variáveis contribuindo para uma queda nos preços, o que diminui em cerca de ⅓ o valor da saca.</p>
+
+            <h3>4.4 SITE</h3>
+            <p>&nbsp;	O site tem o nome “Capital do Campo”, ele foi criado num estilo minimalista, com as principais cores sendo tons pastéis, de verde, laranja, amarelo, e utilizando da fonte Garamond -  visando uma identidade visual séria e facilitar a leitura do público.</p>
+            <p>&nbsp;Ele tem uma temática de jornal e todo conteúdo é produzido de acordo, seu objetivo principal é disseminar informações úteis, de forma acessível, a todos, sobre o mercado dessa commodity que representa parte tão significativa do PIB.</p>
+        </article>
+
+        <article id="considerações finais">
+            <h2>CONSIDERAÇÕES FINAIS</h2>
+            <p>&nbsp;Em última análise fica bem claro que ao adotar uma visão macroeconômica, uma das variáveis que interferem largamente nos preços de commodities globalizadas é as mudanças nas curvas de oferta e demanda, tendo apenas que encontrar quais fatores foram propulsores.</p>
+            <p>&nbsp;E em praças brasileiras as taxas de câmbio são importantíssimas para determinar os preços pagos aos produtores, mostrando a importância de boas políticas monetárias por parte dos governadores.</p>
+            <p>&nbsp;Ademais, as oscilações de preços tão grandes, em espaços de tempo tão curtos, mostram paralelamente a necessidade dos empreendedores do agronegócio entenderem dinâmicas de mercado, como boas práticas de comercialização podem garantir a sobrevivência de negócios.</p>
         </article>
 
         <article id="referencias">
@@ -192,6 +292,10 @@
                     <p><a class="link" href="https://www.agroanalysis.com.br" target="_blank">CAFFAGNI, L. C. Matriz de sensibilidade da soja. AgroANALYSIS, v. 43, n. 5, p. 37–39, 2 jun. 2023.</a></p>
                     <p><a class="link" href="https://www.embrapa.br/soja/cultivos/soja1/dados-economicos" target="_blank">Dados econômicos - Portal Embrapa. Disponível em: <https://www.embrapa.br/soja/cultivos/soja1/dados-economicos>.</a></p>
                     <p><a class="link" href="https://editorarevistas.mackenzie.br/index.php/rem/article/view/777" target="_blank">MARTINS, C. M. F.; DE CASTRO JUNIOR, L. G. Dinâmica de Exportação: A Internalização do Preço da Soja em Grão Brasileira. Revista de Economia Mackenzie, [S. l.], v. 3, n. 3, 2009. Disponível em: https://editorarevistas.mackenzie.br/index.php/rem/article/view/777. Acesso em: 20 maio. 2024.</a></p>
+                    <p><a class="link" href="https://www.indigoag.com.br/pt-br/blog/por-que-o-preco-da-soja-esta-instavel-em-2023" target="_blank">AGRICULTURE, I. Por que o preço da soja está instável em 2023? Disponível em: https://www.indigoag.com.br/pt-br/blog/por-que-o-preco-da-soja-esta-instavel-em-2023.</a></p>
+                    <p><a class="link" href="https://www.scielo.br/j/ap/article/view/777" target="_blank">MARGARIDO, M. A.; TUROLLA, F. A.; FERNANDES, J. M. Análise da elasticidade de transmissão de preços no mercado internacional de soja. Pesquisa & Debate, v. 12, n. 2(20), 2001.</a></p>
+                    <p><a class="link" href="https://www.researchgate.net/publication/363582106_Analise_do_Processo_de_Formacao_do_Preco_da_Soja_no_Brasil_e_no_Rio_Grande_do_Sul_2020" target="_blank">COSTA, N. Análise do processo de formação do preço da soja no Brasil e no Rio Grande do Sul. PDF—Santa Maria Editora GR: [s.n.]</a></p>
+                    <p><a class="link" href="https://www.investing.com/" target="_blank">INVESTING. Investing.com - Stock Market Quotes & Financial News. Disponível em: https://www.investing.com/.</a></p>
                 </div>
             </div>
         </article>
