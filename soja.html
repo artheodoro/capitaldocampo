@@ -300,7 +300,57 @@
             </div>
         </article>
     </main>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão para o topo</title>
+    <style>
+        /* Estilos para o botão */
+        #btnTopo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: none; /* Inicialmente oculto */
+        }
 
+        #btnTopo:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botão para voltar ao topo -->
+    <button id="btnTopo" onclick="topoPagina()">Voltar ao topo</button>
+
+    <script>
+        // Mostrar o botão quando o usuário rolar a página
+        window.onscroll = function() {
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                document.getElementById("btnTopo").style.display = "block";
+            } else {
+                document.getElementById("btnTopo").style.display = "none";
+            }
+        };
+
+        // Função para voltar ao topo
+        function topoPagina() {
+            document.body.scrollTop = 0; // Para Safari
+            document.documentElement.scrollTop = 0; // Para Chrome, Firefox, IE e Opera
+        }
+    </script>
+
+</body>
+</html>
     <footer>
         <p>&copy; 2024 Capital do Campo. Todos os direitos reservados.</p>
     </footer>
