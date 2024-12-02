@@ -5,105 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital do Campo</title>
     <style>
-        body {
-            font-family: 'Garamond', serif;
-            background-color: #b7cf9d;
-            margin: 0;
-            padding: 0;
-            font-size: 16px;
-            line-height: 1.4;
-        }
-        header {
-            background-color: #fffbea;
-            padding: 20px;
-            color: #333;
-        }
-        header h1 {
-            display: inline-block;
-            font-size: 3em; /* Tamanho da fonte aumentado */
-            margin: 0;
-            vertical-align: middle;
-        }
-        
-        .titulo-imagem {
-            text-align: center; /* Centraliza o título */
-            font-size: 14pt; /* Define o tamanho da fonte */
-            font-weight: bold; /* Deixa o título em negrito */
-            margin-bottom: 10px; /* Espaço abaixo do título */
-        }
+    body {
+        font-family: 'Garamond', serif;
+        background-color: #a6b091; /* Fundo da página inicial */
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
 
-        .image-container {
-            display: inline-block;
-            vertical-align: middle;
-            margin-left: 20px; /* Espaço entre o título e a imagem */
-        }
-        .container-imagem {
-            display: flex; /* Usando flexbox para centralizar */
-            justify-content: center; /* Centraliza a imagem na horizontal */
-            align-items: center; /* Alinha a imagem na vertical, se necessário */
-        }
-        
-        nav {
-            background-color: #fffbea;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            margin: 0 10px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background-color: #f0e68c;
-        }
-        main {
-            padding: 20px;
-            background-color: #dfecc4;
-            border-radius: 15px;
-            margin: 20px auto;
-            max-width: 800px;
-        }
-        article {
-            background-color: #fff;
-            border: 2px solid #384e12;
-            border-radius: 15px;
-            padding: 15px;
-            margin-bottom: 20px;
-            color: black;
-            text-align: justify;
-        }
-        h2 {
-            color: #333;
-            text-transform: uppercase;
-            margin-top: 10px;
-        }
-        h3 {
-            margin-top: 10px;
-        }
-        .sections {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .sections a {
-            color: #333;
-            font-weight: bold;
-            margin: 0 10px;
-            cursor: pointer;
-        }
-        footer {
-            background-color: #384e12;
-            padding: 20px;
-            text-align: center;
-            color: #fff;
-        }
-        p {
-            text-indent: 20px;
-            margin-top: 10px;
-        }
-    </style>
+    header {
+        background-color: #384e12; /* Cor do cabeçalho */
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+    }
+
+    nav {
+        background-color: #fffbea; /* Cor do menu */
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap; /* Impede empilhamento */
+        overflow-x: auto; /* Permite rolagem horizontal se necessário */
+        gap: 10px; /* Espaçamento consistente entre os itens */
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #333;
+        padding: 10px 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Efeito sutil de sombra */
+    }
+
+    nav a:hover {
+        background-color: #f0e68c;
+    }
+
+    main {
+        padding: 20px;
+        border: 10px solid;
+        border-color: #b7cf9d #5c7038 #e59848; /* Bordas sólidas decorativas */
+        border-radius: 15px;
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+    }
+
+    .logo {
+        background-color: #e59848; /* Cor da caixa ao lado da logo */
+        border-radius: 10px;
+        border: 3px solid;
+        border-color: #b7cf9d #5c7038 #e59848;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .team-photo {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        border: 3px solid;
+        border-color: #b7cf9d #5c7038 #e59848;
+        border-radius: 15px;
+        padding: 20px;
+    }
+
+    .team-photo img {
+        max-width: 40%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    .team-description {
+        max-width: 55%;
+        color: #fff; /* Fonte branca */
+        font-size: 1.2em;
+    }
+
+    footer {
+        background-color: #384e12;
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+    }
+</style>
 </head>
 <body>
     <header style="display: flex; justify-content: space-between; align-items: center; background-color: #fffbea; padding: 20px;">
