@@ -51,7 +51,6 @@
         border-color: #b7cf9d #5c7038 #e59848; /* Bordas sólidas decorativas */
         border-radius: 15px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
-        margin-bottom: 20px;
     }
 
     .logo {
@@ -74,16 +73,12 @@
         border-color: #b7cf9d #5c7038 #e59848;
         border-radius: 15px;
         padding: 20px;
-        flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
-        gap: 20px;
     }
 
     .team-photo img {
-        width: 100%; /* As imagens ocupam 100% do espaço disponível */
-        max-width: 350px; /* Limita o tamanho máximo das imagens */
-        height: auto;
+        max-width: 100%; /* Tamanho máximo em largura */
+        height: auto; /* Mantém a proporção da imagem */
         border-radius: 10px;
-        object-fit: cover; /* Garante que as imagens fiquem proporcionais sem deformar */
     }
 
     .team-description {
@@ -99,14 +94,31 @@
         color: #fff;
     }
 
+    /* Ajustes responsivos para telas menores */
     @media (max-width: 768px) {
         .team-photo {
-            flex-direction: column; /* Alinha as imagens verticalmente em telas menores */
-            align-items: center;
+            flex-direction: column; /* Empilha as fotos em telas menores */
+            align-items: center; /* Centraliza o conteúdo */
         }
 
         .team-photo img {
-            max-width: 100%; /* As imagens ocupam 100% do espaço em telas menores */
+            max-width: 80%; /* Limita a largura da imagem */
+            margin-bottom: 15px; /* Espaço abaixo das imagens */
+        }
+
+        .team-description {
+            max-width: 100%;
+            font-size: 1em; /* Reduz o tamanho da fonte em telas pequenas */
+        }
+
+        main {
+            padding: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .team-photo img {
+            max-width: 90%; /* Limita mais ainda as imagens */
         }
     }
 </style>
@@ -117,7 +129,7 @@
         <div class="image-container" style="margin-left: 20px;">
             <img src="logo 2.png" alt="Logo" style="width: 100px; height: auto;">
         </div>
-    </header>
+    </header>        
 
     <nav>
         <a href="index.html">Início</a>
