@@ -51,6 +51,7 @@
         border-color: #b7cf9d #5c7038 #e59848; /* Bordas sólidas decorativas */
         border-radius: 15px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+        margin-bottom: 20px;
     }
 
     .logo {
@@ -65,26 +66,34 @@
         text-align: center;
     }
 
-    .team-photo {
-        display: flex;
-        justify-content: space-between;
+    .photo {
         margin-top: 20px;
-        border: 3px solid;
-        border-color: #b7cf9d #5c7038 #e59848;
-        border-radius: 15px;
-        padding: 20px;
+        text-align: center;
     }
 
-    .team-photo img {
-        max-width: 200px; /* Reduz o tamanho máximo da imagem */
+    .photo img {
+        max-width: 100%; /* As imagens ocuparão 100% do espaço disponível, mas sem ultrapassar */
         height: auto; /* Mantém a proporção da imagem */
         border-radius: 10px;
     }
 
-    .team-description {
-        max-width: 55%;
-        color: #fff; /* Fonte branca */
-        font-size: 1.2em;
+    .link-box {
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .link-box a {
+        color: #fff;
+        font-size: 1.1em;
+        text-decoration: none;
+        background-color: #5c7038;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .link-box a:hover {
+        background-color: #e59848;
     }
 
     footer {
@@ -96,29 +105,27 @@
 
     /* Ajustes responsivos para telas menores */
     @media (max-width: 768px) {
-        .team-photo {
-            flex-direction: column; /* Empilha as fotos em telas menores */
-            align-items: center; /* Centraliza o conteúdo */
-        }
-
-        .team-photo img {
-            max-width: 150px; /* Limita ainda mais a largura da imagem */
-            margin-bottom: 15px; /* Espaço abaixo das imagens */
-        }
-
-        .team-description {
-            max-width: 100%;
-            font-size: 1em; /* Reduz o tamanho da fonte em telas pequenas */
+        .photo img {
+            max-width: 80%; /* Limita a largura das imagens em telas menores */
         }
 
         main {
-            padding: 10px;
+            padding: 15px;
+        }
+
+        .link-box a {
+            font-size: 1em;
+            padding: 8px 15px;
         }
     }
 
     @media (max-width: 480px) {
-        .team-photo img {
-            max-width: 120px; /* Limita as imagens ainda mais em telas muito pequenas */
+        .photo img {
+            max-width: 90%; /* Limita ainda mais as imagens em telas muito pequenas */
+        }
+
+        .link-box a {
+            font-size: 0.9em;
         }
     }
 </style>
@@ -147,6 +154,7 @@
             <a href="https://www.canalrural.com.br/agricultura/projeto-soja-brasil/soja-mercado-deve-ter-precos-melhores-no-brasil/" target="_blank">Clique aqui para acessar a notícia</a>
         </div>
     </main>
+
     <main>
         <div class="photo">
             <img src="notícias 2.png" alt="Foto da notícia">
@@ -155,6 +163,7 @@
             <a href="https://globorural.globo.com/cotacoes/noticia/2024/09/precos-de-soja-e-milho-sobem-e-o-do-trigo-cai-na-bolsa-de-chicago.ghtml" target="_blank">Clique aqui para acessar a notícia</a>
         </div>
     </main>
+
     <main>
         <div class="photo">
             <img src="notícias 3.png" alt="Foto da notícia">
