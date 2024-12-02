@@ -51,6 +51,7 @@
         border-color: #b7cf9d #5c7038 #e59848; /* Bordas sólidas decorativas */
         border-radius: 15px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+        margin-bottom: 20px;
     }
 
     .logo {
@@ -93,6 +94,38 @@
         text-align: center;
         color: #fff;
     }
+
+    /* Novas regras para as caixas de texto com imagens */
+    .photo-box {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 10px;
+        background-color: #e59848; /* Cor de fundo das caixas */
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .photo-box img {
+        width: 100%; /* A imagem ocupa 100% da largura da caixa */
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover; /* Garante que a imagem não saia da caixa e mantenha o foco */
+    }
+
+    .link-box {
+        background-color: #384e12;
+        padding: 10px;
+        border-radius: 10px;
+        color: #fff;
+        text-align: center;
+    }
+
+    .link-box a {
+        color: #fff;
+        font-size: 1.2em;
+        text-decoration: none;
+    }
 </style>
 </head>
 <body>
@@ -112,23 +145,25 @@
     </nav>
 
     <main>
-        <div class="photo">
+        <div class="photo-box">
             <img src="e.1.png" alt="Foto da notícia">
         </div>
         <div class="link-box">
             <a href="https://cotrisoja.com.br/cotrisoja-e-icl-reunem-produtores-em-tapera-para-capacitacao-sobre-soja/" target="_blank">Clique aqui para acessar mais informações sobre o evento da Cotrisoja</a>
         </div>
     </main>
+
     <main>
-        <div class="photo">
+        <div class="photo-box">
             <img src="e.2.png" alt="Foto da notícia">
         </div>
         <div class="link-box">
             <a href="https://www.sistemafaemg.org.br/sindicatos/noticias/evento-sobre-soja-e-milho-reune-produtores-na-regiao-central-do-estado" target="_blank">Clique aqui para acessar mais informações sobre o evento promovido pela Embrapa</a>
         </div>
     </main>
+
     <main>
-        <div class="photo">
+        <div class="photo-box">
             <img src="e.3.png" alt="Foto da notícia">
         </div>
         <div class="link-box">
