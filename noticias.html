@@ -51,6 +51,7 @@
         border-color: #b7cf9d #5c7038 #e59848; /* Bordas sólidas decorativas */
         border-radius: 15px;
         box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
+        margin-bottom: 20px;
     }
 
     .logo {
@@ -73,12 +74,16 @@
         border-color: #b7cf9d #5c7038 #e59848;
         border-radius: 15px;
         padding: 20px;
+        flex-wrap: wrap; /* Permite que as imagens se ajustem em telas menores */
+        gap: 20px;
     }
 
     .team-photo img {
-        max-width: 40%;
+        width: 100%; /* As imagens ocupam 100% do espaço disponível */
+        max-width: 350px; /* Limita o tamanho máximo das imagens */
         height: auto;
         border-radius: 10px;
+        object-fit: cover; /* Garante que as imagens fiquem proporcionais sem deformar */
     }
 
     .team-description {
@@ -93,6 +98,17 @@
         text-align: center;
         color: #fff;
     }
+
+    @media (max-width: 768px) {
+        .team-photo {
+            flex-direction: column; /* Alinha as imagens verticalmente em telas menores */
+            align-items: center;
+        }
+
+        .team-photo img {
+            max-width: 100%; /* As imagens ocupam 100% do espaço em telas menores */
+        }
+    }
 </style>
 </head>
 <body>
@@ -101,7 +117,7 @@
         <div class="image-container" style="margin-left: 20px;">
             <img src="logo 2.png" alt="Logo" style="width: 100px; height: auto;">
         </div>
-    </header>        
+    </header>
 
     <nav>
         <a href="index.html">Início</a>
@@ -135,25 +151,6 @@
             <a href="https://www.agrolink.com.br/noticias/soja-nao-oscila--veja-os-precos_495086.html" target="_blank">Clique aqui para acessar a notícia</a>
         </div>
     </main>
-    <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Botão de Voltar ao Topo</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <div class="content">
-
-    </div>
-
-    <button id="scrollToTopBtn" class="scroll-btn">↑</button>
-
-    <script src="script.js"></script>
-</body>
-</html>
 
     <footer>
         <p>© 2024 Capital do Campo</p>
