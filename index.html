@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Capital do Campo</title>
-  <style>
+ <style>
     body {
         font-family: 'Garamond', serif;
         background-color: #a6b091; /* Fundo da página inicial */
@@ -24,33 +24,25 @@
         background-color: #fffbea; /* Cor do menu */
         padding: 10px;
         text-align: center;
-        position: sticky;
-        top: 0;
-        z-index: 100;
         display: flex;
         justify-content: center;
-        flex-wrap: wrap; /* Permite que os itens se ajustem em várias linhas */
+        flex-wrap: nowrap; /* Impede empilhamento */
+        overflow-x: auto; /* Permite rolagem horizontal se necessário */
+        gap: 10px; /* Espaçamento consistente entre os itens */
     }
 
     nav a {
         text-decoration: none;
         color: #333;
         padding: 10px 20px;
-        margin: 5px; /* Ajustado para melhorar o espaçamento em telas menores */
         background-color: #fff;
         border-radius: 5px;
         white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Efeito sutil de sombra */
     }
 
     nav a:hover {
         background-color: #f0e68c;
-    }
-
-    @media (max-width: 600px) {
-        nav {
-            flex-direction: column; /* Empilha os itens verticalmente em telas menores */
-            align-items: center;
-        }
     }
 
     main {
