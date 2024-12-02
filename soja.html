@@ -42,23 +42,29 @@
             justify-content: center; /* Centraliza a imagem na horizontal */
             align-items: center; /* Alinha a imagem na vertical, se necessário */
         }
-
         nav {
-            background-color: #fffbea;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
-            text-decoration: none;
-            color: #333;
-            padding: 10px 20px;
-            margin: 0 10px;
-            background-color: #fff;
-            border-radius: 5px;
-        }
-        nav a:hover {
-            background-color: #f0e68c;
-        }
+    background-color: #fffbea;
+    padding: 10px;
+    text-align: center;
+    overflow-x: auto; /* Habilita rolagem horizontal */
+    white-space: nowrap; /* Impede que as abas quebrem linha */
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block; /* Garante que os links fiquem lado a lado */
+}
+
+nav a:hover {
+    background-color: #f0e68c;
+}
+
+
         main {
             padding: 20px;
             background-color: #dfecc4;
