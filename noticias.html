@@ -66,12 +66,16 @@
         text-align: center;
     }
 
-    .photo {
+    .photo-container {
         margin-top: 20px;
         text-align: center;
+        border: 2px solid #b7cf9d;
+        border-radius: 10px;
+        padding: 10px;
+        background-color: #fff;
     }
 
-    .photo img {
+    .photo-container img {
         max-width: 100%; /* As imagens ocuparão 100% do espaço disponível, mas sem ultrapassar */
         height: auto; /* Mantém a proporção da imagem */
         border-radius: 10px;
@@ -105,7 +109,7 @@
 
     /* Ajustes responsivos para telas menores */
     @media (max-width: 768px) {
-        .photo img {
+        .photo-container img {
             max-width: 80%; /* Limita a largura das imagens em telas menores */
         }
 
@@ -120,7 +124,7 @@
     }
 
     @media (max-width: 480px) {
-        .photo img {
+        .photo-container img {
             max-width: 90%; /* Limita ainda mais as imagens em telas muito pequenas */
         }
 
@@ -147,7 +151,7 @@
     </nav>
 
     <main>
-        <div class="photo">
+        <div class="photo-container">
             <img src="notícias 1.png" alt="Foto da notícia">
         </div>
         <div class="link-box">
@@ -156,7 +160,7 @@
     </main>
 
     <main>
-        <div class="photo">
+        <div class="photo-container">
             <img src="notícias 2.png" alt="Foto da notícia">
         </div>
         <div class="link-box">
@@ -165,7 +169,7 @@
     </main>
 
     <main>
-        <div class="photo">
+        <div class="photo-container">
             <img src="notícias 3.png" alt="Foto da notícia">
         </div>
         <div class="link-box">
