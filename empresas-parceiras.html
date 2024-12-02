@@ -18,28 +18,27 @@
             color: #333;
         }
        nav {
-    background-color: #fffbea;
-    padding: 10px;
-    text-align: center;
-    overflow-x: auto; /* Habilita rolagem horizontal */
-    white-space: nowrap; /* Impede que as abas quebrem linha */
-}
+            background-color: #fffbea;
+            padding: 10px;
+            text-align: center;
+            overflow-x: auto; /* Habilita rolagem horizontal */
+            white-space: nowrap; /* Impede que as abas quebrem linha */
+        }
 
-nav a {
-    text-decoration: none;
-    color: #333;
-    padding: 10px 20px;
-    margin: 0 10px;
-    background-color: #fff;
-    border-radius: 5px;
-    display: inline-block; /* Garante que os links fiquem lado a lado */
-}
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            background-color: #fff;
+            border-radius: 5px;
+            display: inline-block; /* Garante que os links fiquem lado a lado */
+        }
 
-nav a:hover {
-    background-color: #f0e68c;
-}
+        nav a:hover {
+            background-color: #f0e68c;
+        }
 
-    
         main {
             padding: 20px;
             background-color: #dfecc4; /* Caixa de texto retangular */
@@ -47,20 +46,35 @@ nav a:hover {
             margin: 20px auto;
             max-width: 800px;
         }
+
         .company {
             display: flex;
+            flex-direction: column;
+            align-items: center;
             margin-bottom: 20px; /* Espaço entre as empresas */
         }
-        .photo {
-            width: 40%; /* Espaço para a foto à esquerda */
-            margin-right: 20px;
-        }
-        .photo img {
-            width: 60%; /* Ajuste o tamanho das imagens conforme necessário */
+
+        .photo-container {
+            width: 100%;
+            max-width: 400px; /* Limita a largura das imagens para telas grandes */
+            height: 300px; /* Define uma altura padrão para as caixas de imagens */
+            overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse a caixa */
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff; /* Fundo branco para a caixa da imagem */
             border-radius: 10px;
         }
+
+        .photo-container img {
+            width: 100%;
+            height: auto;
+            object-fit: cover; /* Faz com que a imagem se ajuste à caixa sem distorcer */
+        }
+
         .link-box {
-            width: 60%; /* Espaço para o link à direita */
+            width: 80%; /* Espaço para o link */
             padding: 10px;
             background-color: #e59848; /* Cor da caixa de link */
             border-radius: 10px;
@@ -70,11 +84,13 @@ nav a:hover {
             justify-content: center;
             align-items: center;
         }
+
         .link-box a {
             color: #fff;
             font-size: 1.2em;
             text-decoration: none;
         }
+
         footer {
             background-color: #384e12;
             padding: 20px;
@@ -101,7 +117,7 @@ nav a:hover {
 
     <main>
         <div class="company">
-            <div class="photo">
+            <div class="photo-container">
                 <img src="ba.png" alt="Foto da empresa">
             </div>
             <div class="link-box">
@@ -110,7 +126,7 @@ nav a:hover {
         </div>
 
         <div class="company">
-            <div class="photo">
+            <div class="photo-container">
                 <img src="co.png" alt="Foto da empresa">
             </div>
             <div class="link-box">
@@ -119,7 +135,7 @@ nav a:hover {
         </div>
 
         <div class="company">
-            <div class="photo">
+            <div class="photo-container">
                 <img src="da.png" alt="Foto da empresa">
             </div>
             <div class="link-box">
