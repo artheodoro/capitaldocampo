@@ -5,95 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empresas Parceiras</title>
     <style>
-    body {
-        font-family: 'Garamond', serif;
-        background-color: #a6b091; /* Fundo da página inicial */
-        color: #fff;
-        margin: 0;
-        padding: 0;
-    }
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #b7cf9d; /* Fundo da página */
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fffbea; /* Cor do cabeçalho */
+            padding: 20px;
+            text-align: center;
+            color: #333;
+        }
+       nav {
+    background-color: #fffbea;
+    padding: 10px;
+    text-align: center;
+    overflow-x: auto; /* Habilita rolagem horizontal */
+    white-space: nowrap; /* Impede que as abas quebrem linha */
+}
 
-    header {
-        background-color: #384e12; /* Cor do cabeçalho */
-        padding: 20px;
-        text-align: center;
-        color: #fff;
-    }
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    display: inline-block; /* Garante que os links fiquem lado a lado */
+}
 
-    nav {
-        background-color: #fffbea; /* Cor do menu */
-        padding: 10px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        flex-wrap: nowrap; /* Impede empilhamento */
-        overflow-x: auto; /* Permite rolagem horizontal se necessário */
-        gap: 10px; /* Espaçamento consistente entre os itens */
-    }
+nav a:hover {
+    background-color: #f0e68c;
+}
 
-    nav a {
-        text-decoration: none;
-        color: #333;
-        padding: 10px 20px;
-        background-color: #fff;
-        border-radius: 5px;
-        white-space: nowrap; /* Garante que o texto não quebre em várias linhas */
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Efeito sutil de sombra */
-    }
-
-    nav a:hover {
-        background-color: #f0e68c;
-    }
-
-    main {
-        padding: 20px;
-        border: 10px solid;
-        border-color: #b7cf9d #5c7038 #e59848; /* Bordas sólidas decorativas */
-        border-radius: 15px;
-        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2); /* Adiciona um efeito de sombra */
-    }
-
-    .logo {
-        background-color: #e59848; /* Cor da caixa ao lado da logo */
-        border-radius: 10px;
-        border: 3px solid;
-        border-color: #b7cf9d #5c7038 #e59848;
-        padding: 20px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
-
-    .team-photo {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 20px;
-        border: 3px solid;
-        border-color: #b7cf9d #5c7038 #e59848;
-        border-radius: 15px;
-        padding: 20px;
-    }
-
-    .team-photo img {
-        max-width: 40%;
-        height: auto;
-        border-radius: 10px;
-    }
-
-    .team-description {
-        max-width: 55%;
-        color: #fff; /* Fonte branca */
-        font-size: 1.2em;
-    }
-
-    footer {
-        background-color: #384e12;
-        padding: 20px;
-        text-align: center;
-        color: #fff;
-    }
-</style>
+    
+        main {
+            padding: 20px;
+            background-color: #dfecc4; /* Caixa de texto retangular */
+            border-radius: 15px;
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .company {
+            display: flex;
+            margin-bottom: 20px; /* Espaço entre as empresas */
+        }
+        .photo {
+            width: 40%; /* Espaço para a foto à esquerda */
+            margin-right: 20px;
+        }
+        .photo img {
+            width: 60%; /* Ajuste o tamanho das imagens conforme necessário */
+            border-radius: 10px;
+        }
+        .link-box {
+            width: 60%; /* Espaço para o link à direita */
+            padding: 10px;
+            background-color: #e59848; /* Cor da caixa de link */
+            border-radius: 10px;
+            color: #fff;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .link-box a {
+            color: #fff;
+            font-size: 1.2em;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #384e12;
+            padding: 20px;
+            text-align: center;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header style="display: flex; justify-content: center; align-items: center; background-color: #fffbea; padding: 20px;">
@@ -145,4 +133,3 @@
     </footer>
 </body>
 </html>
-
