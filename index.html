@@ -119,7 +119,16 @@
                 <p style="font-size: 1.2em; line-height: 1.6; color: #333; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);">Somos um jornal direcionado a temática do agronegócio e economia. Temos o objetivo de divulgar informações a todos produtores sobre o mercado internacional da soja.</p>
             </div>
         </section>
-    
+        main, section {
+    word-wrap: break-word; /* Quebra palavras longas que saem do container */
+    overflow-wrap: break-word; /* Alternativa moderna para quebra de palavras */
+    overflow: hidden; /* Impede que o texto saia da caixa */
+}
+
+p {
+    word-wrap: break-word; /* Garante que palavras longas dentro dos parágrafos quebrem corretamente */
+    overflow-wrap: break-word; /* Suporte adicional para navegadores modernos */
+}  
         <section class="team-photo" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 30px; padding: 20px; background-color: #fff; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
             <img src="equipe.jpg" alt="Foto da equipe" style="width: 300px; border-radius: 30px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
             <div class="team-description" style="max-width: 600px; padding-left: 20px;">
